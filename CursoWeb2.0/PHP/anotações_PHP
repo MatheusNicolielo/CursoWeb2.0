@@ -1,0 +1,75 @@
+echo: Construtor da linguagem;
+print: Função de impressão;
+
+
+
+-----Comentários----
+// comentário de uma linha
+#  comentário de uma linha estilo shell
+/* */ comntário de múltiplas linhas
+--------------------
+
+-----Variáveis------
+Principais tipos: String, int, float, boolean, array.
+
+  -> Regras de declaração
+    -Obrigatoriamente iniciar com o caracter "$"
+    -Não podem conter espaços ou caracteres especiais(Excecão underline)
+
+  ->Não necessário definir o tipo da variavel, tipagem dinamica
+
+  ->Case Sensitive
+
+  ->Variáveis Válidas: $nome,$fone1,$endereco_2
+  ->Variáveis Inválidas: $ idade,$1fone,$número
+
+
+--------------------
+
+------Constantes----
+Utilização da função define()
+--------------------
+
+------Operadores Lógicos----
+AND ou &&
+OR  ou ||
+XOR : Verdadeiro apenas se uma das expressões for verdadeira, mas não ambas
+!(negação)
+--------------------
+------Operadores de Incremento----
+Pré-incremento:(++$a) - Adciona uma unidade antes de retornar $a
+Pós-Incremento:($a++) - Retorna $a e depois adciona uma unidade
+Pré-decremento:(--$a) - Diminiu uma unidade antes de retornar $a
+Pós-decremento:($a--) - Retorna $a e depois diminui uma unidade
+--------------------
+
+------Funções Nativas String----
+strtolower($texto) -> recebe uma string e transforma tudo para minúsculo
+strtoupper($texto) -> recebe uma string e transforma tudo em maiusculo
+ucfirst($texto)    -> recebe uma string e transforma o primeiro caracter em maiusculo
+strlen($texto)     -> conta a quantidade de caracteres de uma String
+str_replace(<procura por>,<substitui por>,$texto) -> substitui uma cadeia de caracteres por outra dentro de uma String
+substr($texto,<posica Função debug impressão do Array
+o inicial>,<qtde caracteres>) -> retorna parte de uma string
+--------------------
+
+------Funções Nativas Tarefas Matemáticas
+ceil($numero) -> Arredonda o valor para cima
+floor($numero) -> Arredonda o valor para baixo
+round($numero) -> Arredonda o valor com base nas casas decimais
+rand() -> Gera um inteiro aleatório
+sqrt($numero) -> Retorna a raiz quadrada
+
+-----------------------------------------
+------Funções Nativas Manipular Datas
+date(formato) -> Recuperar data atual
+date_default_timezone_get(timezone) -> Recuperar o timezone default da aplicação
+date_default_timezone_set(timezone) -> Atualizar o timezone default da aplicação
+strtotime(data) ->  Transfomar datas textuais em segundos
+--------------------------------------
+-----------Funções Array--------------
+var_dump(); -> Função debug impressão do Array
+print_r();  -> Mesma coisa da de cima
+  Adcionando novo valor ao array
+    $lista_frutas[] = 'Abacaxi';
+--------------------------------------

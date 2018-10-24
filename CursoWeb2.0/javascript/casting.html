@@ -7,10 +7,13 @@
 			var variavel1 = prompt('Digite algum número: ')
 			var variavel2 = prompt('Digite outro número: ')
 
-			variavel1 = parseInt(variavel1)
+			variavel1 = parseFloat(variavel1) // Transforma para float
 			variavel2 = parseInt(variavel2) // Transforma para inteiro
 
-			document.write(variavel1 + variavel2)
+			console.log(variavel1)
+			console.log(variavel2)
+
+			document.write(variavel1.toString() + variavel2.toString())
 
 
 		</script>

@@ -7,7 +7,7 @@ COMENTARIOS
 // = COMENTARIO DE UMA linha
 /* */ = comentário de múltiplas linhas
 //------------------------
-
+toString() -> metodo para transformar valores numericos em String
 //------------------------
 
 //------------------------

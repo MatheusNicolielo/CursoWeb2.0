@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<meta charset="utf-8"></meta>
+		<title>JavaScript</title>
+
+		<script>
+
+			var data1 = new Date(2017,0,15)
+
+            var data2 = new Date(2017,1,23)
+            
+            document.write(data1.toString())
+            document.write('<hr />')
+            document.write(data2.toString())
+            
+            document.write('<br /><br /><hr />')
+
+            //converter datas para algo que possamos calcular
+            document.write(data1.getTime())
+            document.write('<hr />')
+            document.write(data2.getTime())
+
+            //Encontrar a qtde de milissegundos entre data1 e data2
+            document.write('<br /><br /><hr />')
+            document.write(Math.abs(data1.getTime() - data2.getTime()))
+
+            //1 dia 24hrs, 
+            //1hr 60minutos, 
+            //1minutos 60 segundos, 
+            //1 seegundo = 1000 milissegundos
+            //Quantos milissegundos em um dia
+
+           
+
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

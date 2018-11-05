@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta charset="utf-8"></meta>
+		<title>JavaScript</title>
+
+		<script>
+            var num1 = prompt("Informe o primeiro valor: ")
+            num1 = parseFloat(num1)
+
+            do{
+                var operacao = prompt("Informe a operação(soma/subtracao): ")
+            }while(operacao != 'soma' && operacao != 'subtracao')
+
+            var num2 = prompt("Informe o segundo valor: ")
+            num2 = parseFloat(num2)
+            
+            function executarCalculo(num1,num2){
+                var resultado;
+
+                if(operacao == 'soma'){
+                    resultado = num1 + num2
+                }else{
+                    resultado = num1 - num2 
+                }
+                return resultado;
+            }
+
+            resultado = executarCalculo(num1,num2)
+
+            document.write("O resultado é: " + resultado)
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Eventos Formularios</title>
+    <script>
+        function acao1(){
+            console.log('Eventos Disparado');
+        }
+        //onfocus-> Quando o elemento recebe o foco
+        //onblur -> Quando perde o foco
+    </script>
+    
+</head>
+<body>
+    <input onblur="acao1()" type="text"/>
+
+    <select onchange="console.log('Estado foi modificado')">
+        <option>-- Selecione --</option>
+        <option value="1">Primeira Opcao</option>
+        <option value="2">Segunda Opcao</option>
+    </select>
+</body>
+</html>

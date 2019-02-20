@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Funções Nativas para Manipular Strings</title>
+    <script>
+
+        var nome = "Matheus Nicolielo"
+        var nome2 = ' Serafim dos Santos'
+
+        document.write('Matheus Nicolielo'.length + '<br />'); // Tamanho da String
+        document.write("Matheus Nicolielo".charAt(1)  + '<br />') // Retorna a letra na posição de acordo com o indice informado;
+        document.write("Matheus Nicolielo".indexOf('N')  + '<br />'); // Indice da primeira posição onde foi encontrado o caractere informado
+        // CASO O CARACTERE NÃO EXISTA ENTÃO O RETORNO SERÁ -1
+        document.write(nome.lastIndexOf('o') + '<br />');// Ultimo indice encontrado do caractere informado
+        document.write("Matheus Nicolielo".replace('Nicolielo','Santos')  + '<br />'); // Caso ele encontre a cadeia de caracteres fornecida então ele substitui pela segunda
+        document.write("Matheus Nicolielo".substr(8,9)  + '<br />'); //Extrai parte da string de acordo com a posição inicial e a quantidade
+        document.write("Matheus Nicolielo".toLowerCase()  + '<br />'); // Tudo em caixa baixa
+        document.write("Matheus Nicolielo" .toUpperCase() + '<br />'); // Tudo em caixa alta
+
+        document.write("-     Matheus Nicolielo        - " .trim() + '<br />'); // Remove os espaços das extremidade
+
+        
+        document.write(nome.charCodeAt(1) + '<br />' ); // Retorna codigo ASCII do caractere de acordo com o indice
+        document.write(nome.concat(' Serafim dos Santos') + '<br />'); //Concatenação String
+        document.write(nome.endsWith('Nicolielo') + '<br />'); //Checa se a string termina com a 'x' String informada
+        document.write(String.fromCharCode(97)  + '<br />'); // Retorna o caractere de acordo com o seu código ASCII
+        document.write(nome.includes('Nicolielo') + '<br />'); // Checa se a string informada inclui a string passada
+        var str1 = 'ce';
+        var str2 = 'ab';
+        document.write(str1.localeCompare(str2) + '<br />' ); // Compara as duas Strings
+        /*
+            Retornos:
+                0 -> String's iguais
+                -1 -> Primeira String vem antes no alfabeto que a 2º
+                1 -> Segunda String vem antes no alfabeto que a 1º
+        */
+        document.write((nome+nome2).match(/os/g)  + '<br />' );
+        /*
+            Procura a combinação de caracteres 'os' na string desejada e trás todas as 
+            vezes que encontrou, também é possivel utilizar '/gi' para ignorar o case sensitive
+        */
+        document.write(nome.repeat(2)  + '<br />' ); //Repete a String x vezes
+        document.write(nome.search('Nicolielo') + '<br />' ); //Procura a string informada e retorna o indice do primeiro caracter dela
+        document.write(nome.slice(8,12) + '<br />' ); //Basicamente um substring, corta a string de xº indice até yº indice
+        document.write(nome.split(" ") + '<br />' ); //Divide a string em um array de string's de acordo com o caractere informado
+        document.write(nome.startsWith('Nicolielo') + '<br />' );//Checa se a string começa com a string informada e retorna true/false
+        document.write(nome.valueOf() + '<br />' ); // Retorna o valor primitivo da String
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

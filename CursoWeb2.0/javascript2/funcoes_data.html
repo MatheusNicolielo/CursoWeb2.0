@@ -60,9 +60,20 @@
          document.write('<hr />');
 
         //Enconstrar a qtde de milissegundos entre data1 e data2
-         var x = (data1.getTime())-(data2.getTime());
-         document.write(x)
+         var x = Math.abs(data1.getTime()-data2.getTime());
+         document.write(x);
          document.write('<hr />');
+        // 1 dia = 24horas
+        // 1 minutos = 60segundos
+        // 1 segundo = 1000milissegundos
+
+        document.write('1 dia tem: ' + (1*24*60*60*1000)+ ' milisegundos');
+
+        var milissegundos_por_dia = 1*24*60*60*1000;
+
+        document.write('<hr />');
+
+        document.write('A diferença entre as datas é de: ' + Math.ceil(x/milissegundos_por_dia) + ' dias');
     </script>
 </head>
 <body>

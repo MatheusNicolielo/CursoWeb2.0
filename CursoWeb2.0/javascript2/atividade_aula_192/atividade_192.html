@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Atividade 192</title>
+    <script>
+        function modificaFundo(){
+            document.getElementById('teste').style.background = '#FFFF00';
+        }
+
+        function recuperaEstado(){
+            var x = document.getElementById('teste').value;
+            if(x.length<3){
+                document.getElementById('teste').style.background = "red";
+            }else{
+                document.getElementById('teste').style.background = "green";
+            }
+        }
+
+        
+    </script>
+</head>
+<body>
+    <input type="text" onfocus="modificaFundo()" id="teste" onblur="recuperaEstado()">
+    <hr />
+</body>
+</html>

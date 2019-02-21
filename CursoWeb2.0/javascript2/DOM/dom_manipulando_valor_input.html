@@ -10,7 +10,25 @@
             //Limpar o campo de digitacao;
             document.getElementById('entrada').value=''
 
-            switch()
+            //Limpar espaços em branco nas extremidades da string
+            caracter.trim();
+
+            switch(caracter){
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                        document.getElementById('numeros').value += caracter;
+                    break;
+                default:
+                    document.getElementById('letras').value += caracter;
+            }
         }
     
     </script>
@@ -27,12 +45,14 @@
     <input 
         type="text"
         disabled = "disabled"
+        id="letras"
     />
     <br />
     <span>Numeros: </span>
     <input 
         type="text"
         disabled="disabled"
+        id="numeros"
     />
 </body>
 </html>

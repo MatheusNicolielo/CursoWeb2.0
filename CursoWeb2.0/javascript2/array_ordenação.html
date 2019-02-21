@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Array Ordenação</title>
+    <script>
+        var lista_frutas = [];
+        var lista_numero = [];
+
+        lista_frutas[0] = 'Maça';
+        lista_frutas[1] = 'Uva';
+        lista_frutas[2] = 'Banana';
+        lista_frutas[3] = 'Morango';
+        
+        console.log(lista_frutas.sort(ordenaNumeros));//Ordenação alfa numerica
+
+        //Se usar o sort()com numeros então a ordenação sera alfa numerica
+        lista_numero[0] = 12;
+        lista_numero[1] = 40;
+        lista_numero[2] = 1;
+        lista_numero[3] = 15;
+        
+        function ordenaNumeros(a,b){
+            return a-b;
+            // < 0 -> a ordenado antes de b
+            // > 0 -> b ordenado antes de a
+            // ==  -> a ordem é mantida
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

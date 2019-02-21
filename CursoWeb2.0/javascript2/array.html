@@ -22,7 +22,29 @@
             lista_coisas['frutas'][1]='Maçâ'
             lista_coisas['frutas'][2]='Uva'
 
-        console.log(lista_coisas);
+       //console.log(lista_coisas);
+        //document.write(lista_coisas['frutas'][2])
+
+        /*
+            Introduzir e/ou Remover Elementos do Array
+        */
+
+        var lista_frutas2 = []
+
+        lista_frutas2[0] = 'Banana';
+        lista_frutas2[1] = 'Maçã';
+        /*----------INCLUIR ELEMENTOS--------------------------*/
+            //Incluir Elementos no final do array
+            lista_frutas2.push('Uva');
+            //Incluir elementos no inicio do array
+            lista_frutas2.unshift('Berinjela');
+        /*----------EXCLUIR ELEMENTOS--------------------------*/
+            //Excluir elemento do final do array
+            lista_frutas2.pop()
+            //Excluir elemento do inicio do array
+            lista_frutas2.shift();
+
+            
     </script>
 </head>
 <body>

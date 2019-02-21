@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Array</title>
+    <script>
+        var lista_frutas = Array(); // var lista_frutas = [];
+        //O Atribulo length de Array() funciona mais como um próximo índice numero
+        //do que o numero de elementos do array.
+        lista_frutas[1]='Banana';
+        lista_frutas[2]=true;
+        lista_frutas['x']='Morango';
+        lista_frutas[4]=100;
+        //Array Multidimensional, Array dentro de Array
+        var lista_coisas = [];
+        lista_coisas['pessoas']=Array();
+            lista_coisas['pessoas'][0]='Matheus'
+            lista_coisas['pessoas'][1]='Nicolielo'
+            lista_coisas['pessoas'][2]='Santos'
+        lista_coisas['frutas']=Array();
+            lista_coisas['frutas'][0]='Banana'
+            lista_coisas['frutas'][1]='Maçâ'
+            lista_coisas['frutas'][2]='Uva'
+
+        console.log(lista_coisas);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

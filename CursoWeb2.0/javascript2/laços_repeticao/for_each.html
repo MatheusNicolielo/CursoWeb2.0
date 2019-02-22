@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>For Each</title>
+    <script>
+        var listaFuncionario = ['Viviane','Rosângela','Miguel','Lucas','Fernanda'];
+
+        listaFuncionario.forEach(function(valor,indice,array){
+            //Lógica para cada valor do Array;
+            console.log('índice: ' + indice + ' | valor: ' + valor);
+
+            if(valor === 'Lucas'){
+                array[indice] = 'Um novo valor'
+            }
+        });
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

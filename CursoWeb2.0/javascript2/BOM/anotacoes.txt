@@ -1,0 +1,7 @@
+São componentes que ajudam na interação com os objetos do navegador
+
+    -Como o histórico de sites;
+    -Salvar/ Recuperar Cookies;
+
+
+BOM : BROWSER OBJECT MODEL

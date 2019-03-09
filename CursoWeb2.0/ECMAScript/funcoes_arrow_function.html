@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Teste Babel</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+    /*
+         let quadrado = function(x = 1){
+             return x*x;
+         }
+    */
+         let quadrado = (x) => {
+             return x*x;
+         }
+
+         let quadrado = x => {
+             return x*x;
+         }
+
+    /*
+        let quadrado = () => {
+             return x*x;
+         }
+    */
+
+    /*
+        let quadrado = (x,y) => {
+             return x*x;
+         }
+    */
+
+         document.write(quadrado(3));
+    </script>
+
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

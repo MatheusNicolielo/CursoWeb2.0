@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Var e Let</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+    var serie = 'Friends';
+
+        function x (){
+            var serie = 'Game of Thrones'
+            console.log(serie);
+
+            if(true){
+                console.log('Bloco dentro da Função: ' + 'serie);
+            }
+        }
+        if(true){
+            console.log(serie);
+        }
+    </script>
+
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>

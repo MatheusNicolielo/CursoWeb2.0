@@ -6,8 +6,13 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <script type="text/babel">
-        const getMessage = () => "Hello World";
-        document.getElementById('output').innerHTML = getMessage();
+        const SERIE = 'Doctor Who';
+        console.log('Escopo Global: ' + SERIE);
+        function x(){
+            const SERIE = 'Flash';
+            console.log('Dentro da função: ' + SERIE);
+        }
+        x();
     </script>
 
 </head>

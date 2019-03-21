@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Teste Babel</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        let idade = 29
+        let sexo = 'Masculino'
+        let profissao = 'Programador'
+        /*
+        let objeto = {
+            nome: nome,
+            idade: idade,
+            sexo: sexo,
+            profissao: profissao,
+            //exibirResumo: 
+        };
+        */
+              function acao(){
+            let nome = document.getElementById('nome').value
+            let idade = document.getElementById('idade').value
+            let sexo = document.getElementById('sexo').value
+            let profissao = document.getElementById('profissao').value
+            console.log(nome);
+            console.log(idade);
+            console.log(sexo);
+            console.log(profissao);
+            document.write(`Nome: ${nome}, tem ${idade} anos, do sexo ${sexo} e trabalha como ${profissao}`);
+        }
+    </script>
+
+</head>
+<body>
+    <div id="output"></div>
+    <div style="width: 469px; height:500px;">
+    <form>
+        <p><b>Nome:</b>
+        <input style=" width: 415px;" type="text" name="Nome" id="nome">
+        </p>
+        <p>
+            <b>Idade:</b>
+            <input type="text" name="Idade" id="idade">
+            <b>Sexo:</b>
+            <select name="sexo" style="width:200px;" id="sexo">
+                    <option value="Masculino">Masculino</option> 
+                    <option value="Feminino">Feminino</option>
+                    <option value="Outros">Outros</option>
+            </select>
+        </p>
+        <p><b>Profissão:</b>
+        <input style="width: 392px;" type="text" name="Profissao" id="profissao">
+        </p>
+        <button onclick="acao()" style="float: right;"type="button">Avançar</button>
+        </script>
+    </form>
+    </div>
+</body>
+</html>

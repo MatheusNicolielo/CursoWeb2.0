@@ -5,19 +5,16 @@
     <title>Teste Babel</title>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <script type="text/babel">
-        let idade = 29
-        let sexo = 'Masculino'
-        let profissao = 'Programador'
-        /*
+    <script type="text/babel">     
         let objeto = {
             nome: nome,
             idade: idade,
             sexo: sexo,
             profissao: profissao,
-            //exibirResumo: 
+            exibirResumo: function(){
+               console.log(`Nome: ${nome}, tem ${idade} anos, do sexo ${sexo} e trabalha como ${profissao}`);
+            }
         };
-        */
               function acao(){
             let nome = document.getElementById('nome').value
             let idade = document.getElementById('idade').value
@@ -29,11 +26,12 @@
             console.log(profissao);
             document.write(`Nome: ${nome}, tem ${idade} anos, do sexo ${sexo} e trabalha como ${profissao}`);
         }
+        console.log(objeto)
+        objeto.exibirResumo();
     </script>
 
 </head>
 <body>
-    <div id="output"></div>
     <div style="width: 469px; height:500px;">
     <form>
         <p><b>Nome:</b>

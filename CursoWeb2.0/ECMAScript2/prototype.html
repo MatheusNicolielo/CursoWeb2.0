@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Teste Babel</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        //Aviao
+        //Atributos: Cor e modelo
+        //Metodo: Levantar voo
+
+        let aviao1 = {
+            cor: 'Branco',
+            modelo: 'Airbus a380',
+            levantarVoo = () => {
+                console.log('Levantar Voo')
+            }
+        }
+
+        let AviaoF = () => {
+            this.cor = 'Azul',
+            this.modelo = 'Boeing 787',
+            this.levantarVoo = () => {
+                console.log('Levantar Voo')
+            }
+        }
+
+        class AviaoC{
+            constructor(){
+                this.cor = 'Vermelho',
+                this.modelo = 'Embraer E-Jets'
+            }
+            levantarVoo(){
+                console.log('Levantar Voo')
+            }
+
+            let a3 = new AviaoC();  
+        }
+    </script>
+     
+</head>
+<body>
+    
+</body>
+</html>

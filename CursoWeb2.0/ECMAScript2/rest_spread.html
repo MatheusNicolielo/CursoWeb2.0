@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Teste Babel</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+       //Spread -> Espalhar os dados '...'
+       let tituloArtigo('Como utilizar rest/spread');
+       console.log(tituloArtigo);
+       console.log(...tituloArtigo)
+       console.log([...tituloArtigo])
+
+       let listaCursos1 = ['NodeJD e MongoDB,''ES6, TypeScript e Angular4']
+
+        let pessoa = {nome: 'Joao', idade: 20};
+        let clone = {sexo: 'masculino', ...pessoa};
+        //Rest -> Juntar os dados ... Pega todos os valores e coloca
+        // em formato de Array
+        soma = (...param) => {
+            let resultado = 0
+
+            param.forEach(element => resultado += element)
+
+            return resultado;
+        }
+        soma(3,8,5,7);
+    </script>
+     
+</head>
+<body>
+    
+</body>
+</html>
